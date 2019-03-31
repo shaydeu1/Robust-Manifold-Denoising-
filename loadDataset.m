@@ -1,13 +1,13 @@
 switch dataName
     case 'circle'
-        [data4, data] = generate.curves_with_angles(300);
+        [data4, data] = curves_with_angles(300);
         
-         [data_noise, noise, temp_max_index] = generate.addnoise(data, 0.4);    
+         [data_noise, noise, temp_max_index] = addnoise(data, 0.4);    
         feats = data_noise;
     
     case  'square'
           [data]=square(200);
-           [data_noise, noise, temp_max_index] = generate.addnoise(data, 0.05);
+           [data_noise, noise, temp_max_index] = addnoise(data, 0.05);
            feats=data_noise;
     case 'hole'
         [data] = generate.Generate_Ground_Truth(dataName,1000);

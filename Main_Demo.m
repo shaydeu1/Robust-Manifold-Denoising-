@@ -40,7 +40,7 @@ loadDataset
 loadParams
 tic
 %%%%% Constrcut an Affinity graph W
-[ W, W1, S ,index_mat, index_vote,S_tan] = affinity.createAffMatrix( feats, params, params.affinity_type);
+[ W, W1, S ,index_mat, index_vote,S_tan] = createAffMatrix( feats, params, params.affinity_type);
  toc
 %% BEGIN Spectral Graph Wavelet Transform %%%%%%%
 %Constrcut a K hop graph for each spectral band
